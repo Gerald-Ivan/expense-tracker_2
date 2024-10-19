@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 40px;
+}
+
+.container img, .tempProfile svg {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: rgba(12, 13, 13, 0.50);
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.imageContainer {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.imageContainer svg {
+  cursor: pointer;
+}
+
+.uploadButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.uploadButtons button {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  background: #29292B;
+  border: #29292B 1px solid;
+  color:#FAFAFA;
+
+  transition: background-color 1.0s ease;
+  cursor: pointer;
+}
+
+.uploadButtons button:disabled {
+  color: rgba(250, 250, 250, 0.35);
+}
+
+.nameContainer {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.nameContainer input {
+  width: 290px;
+}
+
+.nameContainer select {
+  display: inline-flex;
+  padding: 12px 56px 12px 18px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(250, 250, 250, 0.40);
+  background-color: transparent;
+  color: #FAFAFA;
+  width: 122px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;    
+}
+
+.nameContainer svg {
+  position: absolute;
+  top: 10px;
+  left: 90px;
+  pointer-events: none;
+}

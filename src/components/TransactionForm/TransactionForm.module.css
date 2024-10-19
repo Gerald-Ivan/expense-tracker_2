@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #171719;
+  padding: 40px;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 500px;
+}
+
+.typeContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.radioContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.radioContainer > label {
+  color: #FAFAFA;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.dateTimeContainer {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.dateContainer, .fieldContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+
+.error {
+  color: #E74A3B;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 18px;
+}
+
+
+
+.dateContainer svg {
+  position: absolute;
+  top: 10px;
+  left: 87%;
+  width: 20px;
+  height: 20px;
+}
+
+.timeContainer > svg {
+  left: 88%;
+}
+
+.dateTimeContainer input[type='date']{
+  width: 100%;
+}
+
+.dateTimeContainer input[type='time']{
+  width: 100%;
+}
+
+.currency{
+  position: absolute;
+  top: 10px;
+  left: 91%;
+  text-transform: uppercase;
+}
+
+.sumContainer {
+  position: relative;
+  width: 100%;
+}
+
+.sumContainer input {
+  width: 100%;
+}
+
+/* Styles for screens between 376px and 768px wide (e.g., tablets) */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 704px;
+    padding-left: 109px;
+    padding-right: 109px;
+  }
+
+
+  .dateTimeContainer input[type='date']{
+    width: 100%;
+  }
+
+  .dateTimeContainer input[type='time']{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 335px;
+    min-width: 335px;
+  }
+
+  .dateTimeContainer input[type='date']{
+    width: 100%;
+  }
+
+  .dateTimeContainer input[type='time']{
+    width: 100%;
+  }
+
+
+  .dateContainer svg {
+    left: 81%;
+  }
+
+  .timeContainer > svg {
+    left: 80%;
+  }
+
+  .currency{
+    left: 86%;
+  }
+
+}

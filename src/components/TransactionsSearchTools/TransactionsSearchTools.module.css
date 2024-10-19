@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.container input {
+  display: inline-flex;
+  padding: 15px 30px;
+  align-items: center;
+  gap: 30px;
+  border-radius: 30px;
+  background: #0C0D0D;
+}
+
+.container input {
+  width: 100%;
+  max-width: 254px;
+}
+
+
+.dateContainer input[type='date'] {
+  width: 100%;
+  max-width: 183px;
+}
+
+.dateTimeContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.dateContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 183px;
+}
+
+
+.dateContainer svg {
+  position: absolute;
+  top: 15px;
+  left: 75%;
+  width: 20px;
+  height: 20px;
+  fill: #0EF387;
+}
+
+@media screen and (max-width: 368px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .dateContainer input[type='date'] {
+    width: 254px;
+    max-width: 295px;
+  }
+
+  .dateContainer svg {
+    left: 210px;
+  }
+}

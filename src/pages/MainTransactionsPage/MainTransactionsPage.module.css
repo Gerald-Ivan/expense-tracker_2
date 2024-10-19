@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  width: 100%;
+  gap: 44px;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 630px;
+}
+
+.headerContainer > h2 {
+  color: #FAFAFA;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.76px;
+}
+
+.headerContainer > p {
+  color: rgba(250, 250, 250, 0.40);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  max-width: 630px;
+  margin-top: 15px;
+}
+
+.formContainer {
+  max-width: 566px;
+  width: 100%;
+}
+
+.chartContainer {
+  position: absolute; 
+  top: 465px;
+  width: 100%;
+  max-width: 630px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .headerContainer {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 704px;
+    width: 100%;
+    min-width: unset;
+  }
+
+  .formContainer {
+    max-width: 704px;
+    min-width: 570px;
+    width: 100%;
+  }
+
+  .chartContainer {
+    position: unset;
+    top: unset;
+    left: unset;
+    max-width: 704px;
+    min-width: 570px;
+  }
+}
+
+
+@media screen and (max-width: 376px) {
+  .headerContainer > p {
+    max-width: 335px;
+  }
+
+  .formContainer {
+    max-width: 335px;
+    min-width: unset;
+  }
+
+  .chartContainer {
+    position: unset;
+    top: unset;
+    left: unset;
+    max-width: 335px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-width: unset;
+  }
+}

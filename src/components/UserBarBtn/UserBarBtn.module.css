@@ -1,0 +1,27 @@
+.container {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 6px 16px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 30px;
+  background: #171719;
+  cursor: pointer;
+}
+
+.container > img, .tempProfile svg {
+  width: 44px;
+  height: 44px;
+  border-radius: 40px;
+}
+
+.container > p {
+  color: rgba(250, 250, 250, 0.40);
+  letter-spacing: -0.32px;
+}
+
+.userPanel {
+  position: absolute;
+  margin-top: 8px;
+  z-index: 100;
+}

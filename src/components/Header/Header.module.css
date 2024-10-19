@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.authHeader {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1240px;
+  width: 100%;
+}
+
+.userBar {
+  display: block;
+}
+
+.burgerMenu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .authHeader {
+    max-width: 768px;
+  }
+  .burgerMenu {
+    display: block;
+  }
+  .userBar, .navigation {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .authHeader {
+    max-width: 376px;
+  }
+  .burgerMenu {
+    display: block;
+  }
+  .userBar {
+    display: none;
+  }
+}

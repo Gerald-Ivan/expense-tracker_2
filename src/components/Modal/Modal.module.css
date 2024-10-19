@@ -1,0 +1,66 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+
+  border-radius: 30px;
+  border: 1px solid rgba(250, 250, 250, 0.10);
+  background: #0C0D0D99;
+}
+
+.modalContainer {
+  top: 170px;
+  height: fit-content;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+
+  border-radius: 30px;
+  border: 1px solid rgba(250, 250, 250, 0.10);
+  background: #171719;
+}
+
+.modalContainer h2 {
+  color: #FAFAFA;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  text-transform: capitalize;
+}
+
+.modalCloseButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #FAFAFA;
+}
+
+.modalContent {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .modalContent > form {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .modalContent {
+    width: 335px;
+  }
+}

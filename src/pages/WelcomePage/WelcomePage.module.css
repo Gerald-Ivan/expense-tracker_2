@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.container h1 {
+  color: rgba(250, 250, 250, 0.40);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+
+.container p {
+  margin-top: 20px;
+  max-width: 533px;
+}
+
+
+.manageFinance {
+  max-width: 575px;
+  color: #FAFAFA;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.12px;
+}
+
+.manageFinance span {
+  color: #0EF387;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.12px;
+  text-decoration-line: underline;
+}
+
+.container p {
+  color: rgba(250, 250, 250, 0.40);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .manageFinance {
+    color: #FAFAFA;
+    font-size: 56px;
+    letter-spacing: -1.12px;
+  }
+
+  .manageFinance span {
+    font-size: 56px;
+    letter-spacing: -1.12px;
+  }
+
+  .container p {
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    max-width: 533px;
+  }
+
+  .subContainer {
+    flex-direction: row;
+  }
+
+  .allUsersTab {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    opacity: 0;
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .container p {
+    max-width: 335px;
+  }
+
+  .manageFinance {
+    color: #FAFAFA;
+    font-size: 32px;
+    letter-spacing: -0.64px;
+    max-width: 335px;
+  }
+
+  .manageFinance span {
+    font-size: 32px;
+    letter-spacing: -0.64px;
+  }
+
+  .container p {
+    font-size: 14px;
+    letter-spacing: -0.28px;
+  }
+
+  .subContainer {
+    flex-direction: row;
+  }
+
+  .allUsersTab {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    opacity: 0;
+    display: none;
+  }
+
+}
