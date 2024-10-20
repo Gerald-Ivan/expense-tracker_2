@@ -17,6 +17,9 @@
   font-weight: 400;
   line-height: normal;
 }
+.expCatPer{
+  margin-left: 50px;
+}
 
 .chart {
   top: -50px;

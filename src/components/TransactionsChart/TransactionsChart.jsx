@@ -108,7 +108,7 @@ export const TransactionsChart = ({ expenses }) => {
                     }} />
                     {cat.categoryName}
                   </div>
-                  <span>{(expensePercentage[cat.categoryName] || 0).toFixed(0)}%</span></li>
+                  <span className={css.expCatPer}>{(expensePercentage[cat.categoryName] || 0).toFixed(0)}%</span></li>
               ),
             )}
 
