@@ -9,7 +9,17 @@
   gap: 24px;
   min-width: 500px;
 }
-
+input{
+  font-family: "Questrial", sans-serif;
+  font-size: 16px;
+}
+.timeInput{
+  color: rgba(250, 250, 250, 0.1);
+}
+textarea{
+  font-family: "Questrial", sans-serif;
+  font-size: 16px;
+}
 .typeContainer {
   display: flex;
   gap: 20px;

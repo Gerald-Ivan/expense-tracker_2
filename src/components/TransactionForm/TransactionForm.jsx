@@ -104,6 +104,7 @@ export const TransactionForm = ({ onSave }) => {
             </label>
             <div className={css.timeContainer} style={{ position: 'relative' }}>
               <input
+                className={css.timeInput}
                 ref={timePicker}
                 value={formData.time || ''}
                 type="time"

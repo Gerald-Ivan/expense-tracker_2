@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <BrowserRouter basename="/expense-tracker">
+        <BrowserRouter basename="/expense-tracker_2">
            <App />
         </BrowserRouter>
       </PersistGate>

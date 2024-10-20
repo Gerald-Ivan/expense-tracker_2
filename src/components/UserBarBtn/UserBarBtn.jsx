@@ -46,7 +46,7 @@ export const UserBarBtn = ({className}) => {
         <p>
           {user.name}
         </p>
-        <svg width={20} height={20}>
+        <svg width={16} height={16}>
           <use
             href={`${svg}${isPanelOpen ? '#chevron-up' : '#chevron-down'}`}
           />
